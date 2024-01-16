@@ -3,7 +3,9 @@
 }
 
 /* Shared area design  */
-
+img{
+    width: 100%;
+}
 
 /* main area design  */
 body {
@@ -105,6 +107,48 @@ select {
     font-weight: 700;
 }
 
+/* popular section  */
+.popular-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.popular-text{
+    flex: 1;
+    /* width: 50%; */
+}
+
+.popular-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.popular-desc {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.visited-list {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+.visited-list li{
+    margin-bottom: 25px;
+}
+
 
 /* responsive part  */
 
@@ -113,22 +157,24 @@ select {
     .nav-items {
         display: none;
     }
-    .banner{
+
+    .banner, .popular-section {
         padding: 30px;
         flex-direction: column;
     }
+
     .banner-container {
         flex-direction: block;
         padding: 15px 0px;
     }
 
-    .banner-title{
+    .banner-title {
         font-size: 22px;
         width: 220px;
         margin-bottom: 28px;
     }
 
-    .banner-desc{
+    .banner-desc {
         font-size: 14px;
     }
 }
