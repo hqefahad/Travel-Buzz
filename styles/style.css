@@ -294,6 +294,72 @@ card img {
     width: 64px;
 }
 
+/* Newsletter part design  */
+
+.newsletter {
+    display: flex;
+    gap: 24px;
+}
+
+.newsletter-text {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    flex: 1;
+    padding: 40px;
+    height: 330px;
+}
+
+.newsletter-image {
+    background-image: url('../Images/Rectangle\ 8\ \(1\).png');
+    max-width: 650px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.newsletter-form {
+    border-top: solid 1px rgba(19, 19, 24, 0.10);
+    padding-top: 24px;
+}
+
+.newsletter-form input {
+    max-width: 395px;
+    padding: 16px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: 0;
+    margin-bottom: 24px;
+}
+
+.rectangle {
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    margin: 240px 320px;
+}
+
+.white-desc {
+    color: #FFF;
+    text-align: center;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 15px;
+    margin: 0px;
+}
+
+.white-title {
+    text-align: center;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 32px;
+    font-weight: 800;
+    padding: 0px;
+    margin: 0px;
+}
+
 /* responsive part  */
 
 @media screen and (max-width: 600px) {
@@ -323,7 +389,9 @@ card img {
         font-size: 14px;
     }
 
-    .row, .choose-container{
+    .row,
+    .choose-container,
+    .newsletter {
         flex-direction: column;
         margin-top: 24px;
         /* padding-top: 90px; */
@@ -343,5 +411,22 @@ card img {
     .box-5,
     .box-6 {
         width: 100%;
+    }
+
+    .rectangle {
+        margin-top: 45%;
+        margin-left:  60%;
+        width: 40%;
+        height: 80%;
+        padding: 0.5%;
+    }
+
+    .white-desc{
+        font-size: 50%;
+    }
+
+    .white-title{
+        font-size: 85%;
+        padding-bottom: 1%;
     }
 }
