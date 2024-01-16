@@ -328,6 +328,7 @@ card img {
 
 /* Get lost section  */
 .get-lost {
+    margin: 25px;
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -422,6 +423,43 @@ card img {
     margin: 0px;
 }
 
+/* Review section  */
+.left{
+    grid-area: left;
+}
+
+.comment-container{
+    grid-area: middle;
+}
+
+.right{
+    grid-area: right;
+}
+
+.review{
+    display: grid;
+    grid-template-areas: "left middle right";
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.review-img{
+    height: 180px;
+    width: 150px;
+}
+
+.comment{
+    border-left: solid 2px var(--primary-color);
+    border-right: solid 2px var(--primary-color);
+    width: 70%;
+    margin: auto;
+    padding: 5% 1%;
+    font-family: Mulish;
+    font-weight: 400;
+    /* height: 250px; */
+}
+
+/* footer section  */
 footer {
     background: rgba(19, 19, 24, 0.05);
     padding: 150px 0px;
