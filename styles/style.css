@@ -16,6 +16,7 @@ header,
 .navContainer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .name img {
@@ -42,6 +43,20 @@ header,
 .nav-items {
     display: flex;
     gap: 44px;
+    list-style-type: none;
+}
+
+.nav-items>li>a {
+    text-decoration: none;
+    color: var(#424247);
+}
+
+li span {
+    color: var(--primary-color);
+}
+
+.hamburger {
+    display: none;
 }
 
 /* banner design  */
@@ -98,7 +113,7 @@ select {
 
 .btn-primary {
     border-radius: 8px;
-    background: #FF5400;
+    background: var(--primary-color);
     width: 200px;
     height: 52px;
     border: none;
@@ -107,6 +122,11 @@ select {
     font-family: Mulish;
     font-size: 16px;
     font-weight: 700;
+}
+
+.icon {
+    padding-right: 10px;
+    text-align: start;
 }
 
 /* popular section  */
@@ -156,6 +176,14 @@ select {
 .destination {
     text-align: center;
     margin-top: 55px;
+}
+
+.destination-title {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-weight: 800;
 }
 
 .destination-desc {
@@ -273,6 +301,8 @@ select {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1020px;
+    margin: auto;
 }
 
 card {
@@ -296,16 +326,46 @@ card img {
     width: 64px;
 }
 
+/* Get lost section  */
+.get-lost {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.left-align{
+    text-align: left;
+}
+
+.video-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* padding-top: 56.25%; */
+}
+
+.Video {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /* Newsletter part design  */
 
 .newsletter {
+    margin-top: 50px;
     display: flex;
     gap: 24px;
 }
 
 .newsletter-text {
     border-radius: 16px;
-    border: 1px solid #FF5400;
+    border: 1px solid var(--primary-color);
     flex: 1;
     padding: 40px;
     height: 330px;
@@ -337,7 +397,7 @@ card img {
     height: 120px;
     transform: rotate(-19.628deg);
     border-radius: 16px;
-    background: #FF5400;
+    background: var(--primary-color);
     margin: 240px 320px;
 }
 
@@ -411,9 +471,13 @@ hr {
         display: none;
     }
 
+    .hamburger {
+        display: block;
+    }
+
     .banner,
-    .popular-section {
-        padding: 30px;
+    .popular-section,.get-lost {
+        /* padding: 30px; */
         flex-direction: column;
     }
 
@@ -434,7 +498,8 @@ hr {
 
     .row,
     .choose-container,
-    .newsletter, .footer-name {
+    .newsletter,
+    .footer-name {
         flex-direction: column;
         margin-top: 24px;
         /* padding-top: 90px; */
@@ -464,6 +529,11 @@ hr {
         padding: 0.5%;
     }
 
+    .Video{
+        position: inherit;
+        height: 250px;
+    }
+
     .white-desc {
         font-size: 50%;
     }
@@ -473,16 +543,16 @@ hr {
         padding-bottom: 1%;
     }
 
-    footer{
+    footer {
         text-align: center;
     }
 
-    .footer-name{
+    .footer-name {
         align-items: center;
         padding: 10px
     }
 
-    .footer-name img{
+    .footer-name img {
         padding: 0px;
     }
 }
