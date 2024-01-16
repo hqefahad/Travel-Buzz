@@ -396,7 +396,7 @@ footer {
 
 hr {
     color: rebeccapurple;
-    width: 872px;
+    width: 70%;
     height: 1px;
     border: solid 1px rgba(19, 19, 24, 0.10);
     margin: 50px auto;
@@ -434,7 +434,7 @@ hr {
 
     .row,
     .choose-container,
-    .newsletter {
+    .newsletter, .footer-name {
         flex-direction: column;
         margin-top: 24px;
         /* padding-top: 90px; */
@@ -471,5 +471,18 @@ hr {
     .white-title {
         font-size: 85%;
         padding-bottom: 1%;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .footer-name{
+        align-items: center;
+        padding: 10px
+    }
+
+    .footer-name img{
+        padding: 0px;
     }
 }
