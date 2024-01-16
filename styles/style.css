@@ -151,6 +151,22 @@ select {
 
 /* .destination-section */
 
+.destination {
+    text-align: center;
+    margin-top: 55px;
+}
+
+.destination-desc {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 10px auto;
+    max-width: 660px;
+    /* 162.5% */
+}
+
 .row {
     display: flex;
     gap: 24px;
@@ -165,13 +181,13 @@ select {
     background-size: 100% 100%;
 }
 
-.image-title{
+.image-title {
     color: #FFF;
     text-align: center;
     font-family: Mulish;
     font-size: 28px;
     font-weight: 800;
-    padding-top: 15%;
+    padding-top: 125px;
 }
 
 .box-1 {
@@ -245,6 +261,39 @@ select {
     width: 20%;
 } */
 
+/* choose us section  */
+.choose-us {
+    text-align: center;
+    margin-top: 135px;
+}
+
+.choose-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+card {
+    text-align: start;
+    margin: 10px;
+    padding: 20px 15px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    max-width: 573px;
+    max-height: 284px;
+}
+
+.odd-card {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+card img {
+    height: 64px;
+    width: 64px;
+}
+
 /* responsive part  */
 
 @media screen and (max-width: 600px) {
@@ -274,26 +323,25 @@ select {
         font-size: 14px;
     }
 
-    .row {
+    .row, .choose-container{
         flex-direction: column;
         margin-top: 24px;
         /* padding-top: 90px; */
     }
 
-    .rowcheck {
+    /* .rowcheck {
         margin-top: 210px;
-    }
+    } */
 
     .row img {
         max-height: 176px;
         /* margin-bottom: 50px; */
     }
 
-    .box-3,.box-4, .box-5, .box-6 {
+    .box-3,
+    .box-4,
+    .box-5,
+    .box-6 {
         width: 100%;
-    }
-
-    .image-title{
-        padding-top: 25%;
     }
 }
